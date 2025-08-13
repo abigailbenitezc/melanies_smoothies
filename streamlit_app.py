@@ -20,8 +20,8 @@ my_dataframe = session.table("smoothies.public.fruit_options").select(col('FRUIT
 
 # Convert the snowárk dataframe to a Pandas Dataframe so we can use the iloc function
 pd_df = my_dataframe.to_pandas()
-st.dataframe(pd_df)
-st.stop()
+# st.dataframe(pd_df)
+# st.stop()
 
 ingridients_list = st.multiselect(
     "Choose up to 5 ingridients:",
